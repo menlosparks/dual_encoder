@@ -13,6 +13,11 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
+_hnsw_vector_db: Any = importlib.import_module(
+    'hnsw-vector-database'
+)
+HnswVectorDatabase = _hnsw_vector_db.HnswVectorDatabase
+
 MODEL_NAME = 'Qwen/Qwen3-Embedding-0.6B'
 QUESTION_SPARSE_DIM = 512
 HIDDEN_DIM = 256
