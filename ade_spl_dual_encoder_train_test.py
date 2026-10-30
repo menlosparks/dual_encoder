@@ -84,7 +84,7 @@ class AnswerTower(nn.Module):
       self,
       answers: Sequence[str] | torch.Tensor,
   ) -> torch.Tensor:
-    self.encode_answer(answers)
+    return self.encode_answer(answers)
 
 
 
