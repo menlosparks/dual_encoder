@@ -14,7 +14,7 @@ from torch import nn
 from torch.nn import functional as F
 
 _hnsw_vector_db: Any = importlib.import_module(
-    'hnsw-vector-database'
+    'hnsw_vector_database'
 )
 HnswVectorDatabase = _hnsw_vector_db.HnswVectorDatabase
 
