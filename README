@@ -1,0 +1,9 @@
+
+Contains the complete code to run a reduced version of the dual encoder for matching advertisers to a user
+
+Files:
+1. ade_spl_dual_encoder_train_test.py 
+Contains the model construction and training code. It gets the toy data from kaggle datasets and creates a vector database with embeddings of the answer set.
+
+2. hnsw_vector_database.py
+Defines a vector database with required methods to add entries , find a top K match and to save the database to disk
